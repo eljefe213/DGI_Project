@@ -1,11 +1,13 @@
 <?php
+$username = $_POST["username"];
 $password = $_POST["password"];
-if($password=="qwertz123")
+
+if($username=="John Doe" AND $password=="qwertz123")
    {
-   echo "The password was correct ";
+   echo "Welcome to the internal area" . $username . "!";
    }
 else
    {
-   echo "The password was false";
+   echo "Access denied";
    }
 ?>
