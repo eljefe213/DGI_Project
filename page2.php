@@ -1,7 +1,11 @@
 <?php
-$forename = $_POST["forename"];
-$surname = $_POST["surname"];
-$email = $_POST["email"]; 
-echo "Hello " . $forename . " " . $surname . ", <br /> 
-Your are registered with the following email address: " . $email . ".";
+$password = $_POST["password"];
+if($password=="qwertz123")
+   {
+   echo "The password was correct ";
+   }
+else
+   {
+   echo "The password was false";
+   }
 ?>
